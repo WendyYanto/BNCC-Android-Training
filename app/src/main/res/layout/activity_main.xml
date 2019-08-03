@@ -1,0 +1,56 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:background="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Title"/>
+
+    <TextView
+            android:textColor="@color/black"
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+    />
+
+    <TextView
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Body"/>
+
+    <TextView
+            android:textColor="@color/black"
+            android:id="@+id/tv_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+    />
+
+    <View android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1"
+          android:background="@color/white"/>
+
+    <Button
+            android:id="@+id/btn_click"
+            android:text="@string/click_me"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@color/colorAccent"
+    />
+
+</LinearLayout>
