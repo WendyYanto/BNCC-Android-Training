@@ -1,4 +1,4 @@
-<LinearLayout
+<RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -9,17 +9,19 @@
             android:id="@+id/toolbar"
             android:background="@color/colorAccent"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"/>
 
     <android.support.v7.widget.RecyclerView
             android:id="@+id/rv_post"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-
-    <View android:layout_width="match_parent"
-          android:layout_height="0dp"
-          android:layout_weight="1"
-          android:background="@color/white"/>
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/toolbar"
+            android:layout_above="@id/btn_click"/>
 
     <Button
             android:id="@+id/btn_click"
@@ -27,6 +29,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
-            android:background="@color/colorAccent"/>
+            android:background="@color/colorAccent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"/>
 
-</LinearLayout>
+</RelativeLayout>

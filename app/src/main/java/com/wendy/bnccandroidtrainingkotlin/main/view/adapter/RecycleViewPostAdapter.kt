@@ -38,7 +38,6 @@ class RecycleViewPostAdapter(private var items: List<PostUiModel>) :
     fun bind(postUiModel: PostUiModel) {
       textViewTitle = view.findViewById(R.id.tv_title)
       textViewBody = view.findViewById(R.id.tv_body)
-
       textViewTitle?.text = postUiModel.title
       textViewBody?.text = postUiModel.body
     }
