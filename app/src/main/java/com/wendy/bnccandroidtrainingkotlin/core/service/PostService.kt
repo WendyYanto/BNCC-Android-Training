@@ -8,6 +8,8 @@ import retrofit2.http.Path
 interface PostService {
 
     @GET("/posts/{id}")
-    fun getPosts(@Path("id") id: Int): Call<PostResponse>
+    fun getPostById(@Path("id") id: Int): Call<PostResponse>
 
+    @GET("/posts")
+    fun getPosts(): Call<List<PostResponse>>
 }

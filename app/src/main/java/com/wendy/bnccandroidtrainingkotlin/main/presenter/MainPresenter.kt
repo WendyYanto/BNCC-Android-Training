@@ -4,5 +4,6 @@ interface MainPresenter {
     fun buttonOnClick()
     fun resetCounter()
     fun detach()
-    fun getPost(id: Int)
+    fun getPostById(id: Int)
+    fun getPosts()
 }

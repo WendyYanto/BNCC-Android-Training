@@ -7,12 +7,15 @@ import retrofit2.converter.gson.GsonConverterFactory
 object AppController {
 
     private fun getRetrofit(baseUrl: String): Retrofit {
-        return Retrofit.Builder().baseUrl(baseUrl)
+        return Retrofit.Builder()
+            .baseUrl(baseUrl)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
     }
 
     fun providePostService(): PostService {
-        return this.getRetrofit("https://jsonplaceholder.typicode.com/").create(PostService::class.java)
+        return this
+            .getRetrofit("https://jsonplaceholder.typicode.com/")
+            .create(PostService::class.java)
     }
 }

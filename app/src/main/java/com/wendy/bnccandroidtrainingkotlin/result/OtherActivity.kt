@@ -4,7 +4,6 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.Toast
-import com.bumptech.glide.Glide
 import com.wendy.bnccandroidtrainingkotlin.R
 
 class OtherActivity : AppCompatActivity() {
@@ -28,6 +27,7 @@ class OtherActivity : AppCompatActivity() {
         }
 
         imageView = findViewById(R.id.iv_image)
-        Glide.with(this).load("https://bncc.net/assets/img/events/Alvion%202012.png").into(imageView)
+        imageView.setImageResource(R.drawable.bncc)
+        // Glide.with(this).load("https://bncc.net/assets/img/events/Alvion%202012.png").into(imageView)
     }
 }
